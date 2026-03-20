@@ -1,22 +1,22 @@
-// sw.js - Service Worker para Ailin Nails
+// sw.js - Service Worker para Perlas Preciosas
 
-const CACHE_NAME = 'ailin-nails-v1';
+const CACHE_NAME = 'perlas-preciosas-v1';
 const urlsToCache = [
-  '/ailin-nails/',
-  '/ailin-nails/index.html',
-  '/ailin-nails/admin.html',
-  '/ailin-nails/admin-login.html',
-  '/ailin-nails/setup-wizard.html',
-  '/ailin-nails/editar-negocio.html',
-  '/ailin-nails/manifest.json',
-  '/ailin-nails/icons/icon-72x72.png',
-  '/ailin-nails/icons/icon-96x96.png',
-  '/ailin-nails/icons/icon-128x128.png',
-  '/ailin-nails/icons/icon-144x144.png',
-  '/ailin-nails/icons/icon-152x152.png',
-  '/ailin-nails/icons/icon-192x192.png',
-  '/ailin-nails/icons/icon-384x384.png',
-  '/ailin-nails/icons/icon-512x512.png'
+  '/perlas-preciosas/',
+  '/perlas-preciosas/index.html',
+  '/perlas-preciosas/admin.html',
+  '/perlas-preciosas/admin-login.html',
+  '/perlas-preciosas/setup-wizard.html',
+  '/perlas-preciosas/editar-negocio.html',
+  '/perlas-preciosas/manifest.json',
+  '/perlas-preciosas/icons/icon-72x72.png',
+  '/perlas-preciosas/icons/icon-96x96.png',
+  '/perlas-preciosas/icons/icon-128x128.png',
+  '/perlas-preciosas/icons/icon-144x144.png',
+  '/perlas-preciosas/icons/icon-152x152.png',
+  '/perlas-preciosas/icons/icon-192x192.png',
+  '/perlas-preciosas/icons/icon-384x384.png',
+  '/perlas-preciosas/icons/icon-512x512.png'
 ];
 
 // ============================================
@@ -108,7 +108,7 @@ self.addEventListener('fetch', event => {
           }
           // Si no hay cache y es imagen, devolver icon por defecto
           if (event.request.url.match(/\.(jpg|jpeg|png|gif|svg|webp)$/)) {
-            return caches.match('/ailin-nails/icons/icon-192x192.png');
+            return caches.match('/perlas-preciosas/icons/icon-192x192.png');
           }
           return new Response('Error de red', { status: 408 });
         });
@@ -138,6 +138,6 @@ self.addEventListener('message', event => {
   }
 });
 
-console.log('✅ Service Worker configurado para Ailin Nails');
+console.log('✅ Service Worker configurado para Perlas Preciosas');
 console.log('📦 Cache:', CACHE_NAME);
 console.log('📄 Archivos a cachear:', urlsToCache.length);
