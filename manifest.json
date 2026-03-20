@@ -1,0 +1,22 @@
+{
+  "name": "Ailin Nails",
+  "short_name": "Ailin",
+  "description": "Uñas y belleza - Tu espacio de cuidado personal",
+  "start_url": "/ailin-nails/",
+  "scope": "/ailin-nails/",
+  "display": "standalone",
+  "background_color": "#ec4899",
+  "theme_color": "#ec4899",
+  "icons": [
+    {
+      "src": "/ailin-nails/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/ailin-nails/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
