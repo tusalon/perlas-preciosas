@@ -1,6 +1,6 @@
 // sw.js - Service Worker para Perlas Preciosas
 
-const CACHE_NAME = 'perlas-preciosas-v29';
+const CACHE_NAME = 'perlas-preciosas-v25';
 const urlsToCache = [
   '/perlas-preciosas/',
   '/perlas-preciosas/index.html',
