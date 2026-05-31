@@ -1,6 +1,6 @@
 // sw.js - Service Worker para Perlas Preciosas
 
-const CACHE_NAME = 'perlas-preciosas-v29';
+const CACHE_NAME = 'perlas-preciosas-v47';
 const urlsToCache = [
   '/perlas-preciosas/',
   '/perlas-preciosas/index.html',
@@ -17,7 +17,14 @@ const urlsToCache = [
   '/perlas-preciosas/icons/icon-152x152.png',
   '/perlas-preciosas/icons/icon-192x192.png',
   '/perlas-preciosas/icons/icon-384x384.png',
-  '/perlas-preciosas/icons/icon-512x512.png'
+  '/perlas-preciosas/icons/icon-512x512.png',
+  '/perlas-preciosas/vendor/react.production.min.js',
+  '/perlas-preciosas/vendor/react-dom.production.min.js',
+  '/perlas-preciosas/vendor/babel.min.js',
+  '/perlas-preciosas/vendor/bcrypt.min.js',
+  '/perlas-preciosas/vendor/tailwind-browser.js',
+  '/perlas-preciosas/vendor/lucide/lucide.css',
+  '/perlas-preciosas/vendor/lucide/lucide.woff2'
 ];
 
 // ============================================
